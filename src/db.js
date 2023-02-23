@@ -1,12 +1,12 @@
 const { Pool } = require('pg')
-const { user, pass, port, host, database } = require('./config.js')
+const  { db }  = require('./config.js')
 
 const pool = new Pool({
-    user: user,
-    password: pass,
-    host: host,
-    port: port,
-    database: database
+    user: db.user,
+    password: db.pass,
+    host: db.host,
+    port: db.port,
+    database: db.database
 })
 
 module.exports = pool;
