@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const cors = require ('cors');
 
 const taskRoutes = require('./routes/tasks.routes.jsx')
+const usersRoutes = require('./routes/users.routes.jsx')
 
 const pool = require('./db.js') 
 
@@ -14,6 +15,7 @@ app.use(morgan('dev'))
 app.use(express.json());
 
 app.use(taskRoutes)
+app.use(usersRoutes)
 
 app.listen(port)
 
