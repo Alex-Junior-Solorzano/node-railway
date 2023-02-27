@@ -7,8 +7,8 @@ const {
     updateUser
 } = require('../controllers/users.controller.jsx')
 
-//const checkAuth = require('../middeleware/auth.jsx')
-//const checkRolAuth = require('../middeleware/rolesAuth.jsx')
+const checkAuth = require('../middlewares/auth.jsx')
+const checkRolAuth = require('../middlewares/rolesAuth.jsx')
 
 const router = Router();
 
