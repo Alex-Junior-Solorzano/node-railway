@@ -17,7 +17,7 @@ router.get('/users/:id', getUser)
 //router.get('/login', login)
 
 //router.get('/users',checkAuth, checkRolAuth(['Admin']), getAlluser)
-router.get('/users', getAlluser)
+router.get('/users',checkAuth, checkRolAuth(['Admin']), getAlluser)
 
 router.post('/users',createUser)
 
