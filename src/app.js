@@ -4,7 +4,7 @@ const cors = require ('cors');
 
 const taskRoutes = require('./routes/tasks.routes.jsx')
 const usersRoutes = require('./routes/users.routes.jsx')
-const authRoutes = require('./routes/auth.routes.jsx') 
+const authRoutes = require('./routes/auth.routes.jsx')
 
 const pool = require('./db.js') 
 

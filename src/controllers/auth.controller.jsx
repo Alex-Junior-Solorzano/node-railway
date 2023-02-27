@@ -1,4 +1,4 @@
-const pool = require('../db.jsx')
+const pool = require('../db.js')
 
 const { encrypt, compare } = require('../helpers/encriptador.jsx')
 
