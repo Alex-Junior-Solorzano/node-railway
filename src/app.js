@@ -6,8 +6,6 @@ const taskRoutes = require('./routes/tasks.routes.jsx')
 const usersRoutes = require('./routes/users.routes.jsx')
 const authRoutes = require('./routes/auth.routes.jsx')
 
-const pool = require('./db.js') 
-
 const app = express()
 const port = process.env.PORT ||3000 ;
 
@@ -23,11 +21,6 @@ app.listen(port)
 
 app.get('/', (req, res) => {
     res.send('hola s')
-})
-
-app.get('/ping', async(req, res) => {
-    const resp =  await pool.query('SELECT * FROM task')
-    res.json(resp.rows)
 })
 
 app.use((err,req,res,next) => {
