@@ -1,5 +1,5 @@
 const { verifyToken } = require('../helpers/token.jsx')
-const pool = require('../db.jsx')
+const pool = require('../db.js')
 
 
 const chechRolAuth = (roles) => async (req,res,next) => {
